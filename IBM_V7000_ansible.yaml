@@ -6,7 +6,7 @@
           private: no
   tasks:
      - name: ssh
-       command: "ssh {{ get_user }}@10.174.86.132 lshost"
+       command: "ssh {{ get_user }}@10.x.x.x lshost"
        register: output
      - debug: var=output
      - name: save the output
